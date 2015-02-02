@@ -7,8 +7,8 @@
      ],
      "resourceSets": [
          {
-             "pathRegex" : "/.*\\.properties",
-             "translationPathExpression" : "/es/${originalFile.path}${originalFile.baseName}_${locale}.${originalFile.extension}",
+             "pathRegex" : "/(?<path>.*)\\.properties",
+             "translationPathExpression" : "/es/${path}_${locale}.${originalFile.extension}",
              "translationCommitMessage" : "Task TRN-18 translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}",
              "type" : "javaProperties",
              "authorizeContent" : true
