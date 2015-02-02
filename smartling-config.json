@@ -1,0 +1,17 @@
+{
+    "locales" : [
+         {
+             "smartling" : "es-ES",
+             "application" : "es-ES"
+         }
+     ],
+     "resourceSets": [
+         {
+             "pathRegex" : "*.properties",
+             "translationPathExpression" : "/es/${path}_${locale}.${originalFile.extension}",
+             "translationCommitMessage" : "Task TRN-18 translate ${originalFile.name} to ${locale}\n${translatedFile.fullName}",
+             "type" : "javaProperties",
+             "authorizeContent" : true
+         }
+     ]
+} 
